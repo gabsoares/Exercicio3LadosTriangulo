@@ -21,13 +21,13 @@ if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1)
     {
         Console.WriteLine("Triângulo isósceles");
     }
-    else if (lado1Quadrado + lado2Quadrado == lado3Quadrado || lado2Quadrado + lado3Quadrado == lado1Quadrado || lado1Quadrado + lado3Quadrado == lado2Quadrado)
+    else if (lado1 != lado2 && lado1 != lado3)
     {
-        Console.WriteLine("Triângulo retângulo");
+        Console.WriteLine("Triângulo escaleno");
     }
     else
     {
-        Console.WriteLine("É um triângulo, mas não é isósceles, equilátero nem retângulo");
+        Console.WriteLine("É um triângulo, mas não é isósceles, equilátero nem escaleno");
     }
 }
 else
